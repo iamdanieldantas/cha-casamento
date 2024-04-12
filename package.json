@@ -7,8 +7,9 @@
   "author": "Sinval Neto <70284242+sinvalbsneto@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
+    "build": "tsc --project tsconfig.build.json",
     "dev": "ts-node-dev src/server.ts",
-    "start": "ts-node src/server.ts",
+    "start": "node dist/main.js",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
