@@ -2,11 +2,9 @@
   "type": "sqlite",
   "database": "src/database/database.sqlite",
   "migrations": [
-    "src/database/migrations/*.ts"
+    "dist/database/migrations/*.js"
   ],
-  "entities": [
-    "src/entities/*.ts"
-  ],
+  "entities": ["dist/entities/*.js"],
   "cli": {
     "migrationsDir": "src/database/migrations",
     "entitiesDir": "src/entities"
